@@ -2,9 +2,15 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="d-flex justify-content-center">
+    <div>
+      <div className="text-center">
       <h1>contact manager</h1>
-      <button className="btn btn-primary mx-3">hi click me</button>
+        <span className=" fa fa-user"> </span>
+      </div>
+
+      <div className="text-center">
+        <button className="btn btn-primary mx-3">hi click me</button>
+      </div>
     </div>
   );
 };
