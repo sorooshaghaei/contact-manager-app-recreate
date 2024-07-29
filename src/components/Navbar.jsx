@@ -8,12 +8,29 @@ const Navbar = () => {
           <div className="row w-100">
             <div className="col">
               <i
-                className="m-2 fa fa-address-book fa-bounce"
+                className="m-3 fa fa-address-book"
                 style={{ color: "#B197FC" }}
               ></i>
               <span style={{ color: "#B197FC" }}>contact manager</span>
             </div>
-            <div className="col">search</div>
+
+            <div className="col">
+              <form className="d-flex m-2" role="search">
+                <input
+                  className="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  className="btn"
+                  style={{ background: "#B197FC" }}
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
