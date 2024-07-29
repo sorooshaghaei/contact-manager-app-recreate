@@ -1,9 +1,13 @@
 import React from "react";
+import Search from "./Search";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar navbar-dark bg-dark">
+    <>
+      <div
+        className="navbar navbar-expand-lg bg-dark"
+        style={{ boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)" }}
+      >
         <div className=" container">
           <div className="row w-100">
             <div className="col">
@@ -15,26 +19,12 @@ const Navbar = () => {
             </div>
 
             <div className="col">
-              <form className="d-flex m-2" role="search">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button
-                  className="btn"
-                  style={{ background: "#B197FC" }}
-                  type="submit"
-                >
-                  Search
-                </button>
-              </form>
+              <Search />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Navbar;
