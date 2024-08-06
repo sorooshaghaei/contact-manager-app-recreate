@@ -1,6 +1,6 @@
 import React from "react";
 
-const Search = () => {
+const SearchContact = () => {
   return (
     <>
       <form className="d-flex m-2" role="search">
@@ -11,11 +11,11 @@ const Search = () => {
           aria-label="Search"
         />
         <button className="btn" style={{ background: "#B197FC" }} type="submit">
-          Search
+          <i className="fa fa-search"></i>
         </button>
       </form>
     </>
   );
 };
 
-export default Search;
+export default SearchContact;

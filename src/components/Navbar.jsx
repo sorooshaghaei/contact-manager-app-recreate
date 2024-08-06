@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "./Search";
+import SearchContact from "./contact/SearchContact";
 
 const Navbar = () => {
   return (
@@ -19,7 +19,7 @@ const Navbar = () => {
             </div>
 
             <div className="col">
-              <Search />
+              <SearchContact />
             </div>
           </div>
         </div>
