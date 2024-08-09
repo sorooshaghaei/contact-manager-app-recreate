@@ -1,21 +1,25 @@
 import React from "react";
 import SearchContact from "./contact/SearchContact";
+import { DarkBlue, Orange } from "../helpers/colors";
 
 const Navbar = () => {
   return (
     <>
       <div
-        className="navbar navbar-expand-lg bg-dark"
-        style={{ boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)" }}
+        className="navbar navbar-expand-lg"
+        style={{
+          boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+          background: DarkBlue,
+        }}
       >
         <div className=" container">
           <div className="row w-100">
             <div className="col">
               <i
                 className="m-3 fa fa-address-book"
-                style={{ color: "#B197FC" }}
+                style={{ color: Orange }}
               ></i>
-              <span style={{ color: "#B197FC" }}>contact manager</span>
+              <span style={{ color: Orange }}>contact manager</span>
             </div>
 
             <div className="col">

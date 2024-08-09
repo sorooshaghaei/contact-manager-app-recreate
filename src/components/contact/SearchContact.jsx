@@ -1,4 +1,5 @@
 import React from "react";
+import { Orange } from "../../helpers/colors";
 
 const SearchContact = () => {
   return (
@@ -10,7 +11,7 @@ const SearchContact = () => {
           placeholder="Search"
           aria-label="Search"
         />
-        <button className="btn" style={{ background: "#B197FC" }} type="submit">
+        <button className="btn" style={{ background: Orange }} type="submit">
           <i className="fa fa-search"></i>
         </button>
       </form>
