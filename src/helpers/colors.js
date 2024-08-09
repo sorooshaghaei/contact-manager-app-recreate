@@ -5,3 +5,4 @@ export const Yellow = "#FFB703";
 export const Orange = "#FB8500";
 export const Red = "#F94144";
 export const Green = "#90BE6D";
+export const Beige = "#E9D8A6";

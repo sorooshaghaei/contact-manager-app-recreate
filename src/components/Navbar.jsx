@@ -19,7 +19,7 @@ const Navbar = () => {
                 className="m-3 fa fa-address-book"
                 style={{ color: Orange }}
               ></i>
-              <span style={{ color: Orange }}>contact manager</span>
+              <span style={{ color: Orange }}><b>contact manager</b></span>
             </div>
 
             <div className="col">
