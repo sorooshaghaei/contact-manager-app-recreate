@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { SkyBlue } from "../../helpers/colors";
 import Contact from "./Contact";
 
-import notFound from "../../assets/no-found.gif";
+import notFoundGif from "../../assets/no-found.gif";
 
 const Contacts = () => {
   // eslint-disable-next-line
@@ -22,7 +22,7 @@ const Contacts = () => {
           }
         ) : ( 
           <img
-            src={notFound}
+            src={notFoundGif}
             alt="not found any contact"
             className="w-25 align-center"
           />
