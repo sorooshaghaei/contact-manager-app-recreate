@@ -20,7 +20,7 @@ const Contacts = () => {
           (c) => {
             c.map(<Contact />);
           }
-        ) : ( 
+        ) : (
           <img
             src={notFoundGif}
             alt="not found any contact"
