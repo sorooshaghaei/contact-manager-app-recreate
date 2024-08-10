@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { SkyBlue } from "../../helpers/colors";
 import Contact from "./Contact";
 
+import notFound from "../../assets/no-found.gif";
+
 const Contacts = () => {
+  // eslint-disable-next-line
+  const [getContact, setContact] = useState([]);
   return (
     <>
       <section className="container">
@@ -12,7 +16,17 @@ const Contacts = () => {
       </section>
 
       <section className="container">
-        <Contact />
+        {getContact > 0 ? (
+          (c) => {
+            c.map(<Contact />);
+          }
+        ) : (
+          <img
+            src={notFound}
+            alt="not found any contact"
+            className="w-25 align-center"
+          />
+        )}
       </section>
     </>
   );
