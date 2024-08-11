@@ -2,9 +2,9 @@ import { SkyBlue } from "../../helpers/colors";
 import Contact from "./Contact";
 
 import notFoundGif from "../../assets/no-found.gif";
+import Spinner from "../Spinner";
 
-const Contacts = ({ contacts }) => {
-  
+const Contacts = ({ contacts, loading }) => {
   return (
     <>
       <section className="container">
@@ -13,17 +13,21 @@ const Contacts = ({ contacts }) => {
         </button>
       </section>
 
-      <section className="container">
-        {contacts.length > 0 ? (
-          contacts.map((c) => <Contact key={c.id} contact={c} />)
-        ) : (
-          <img
-            src={notFoundGif}
-            alt="not found any contact"
-            className="w-25 align-center"
-          />
-        )}
-      </section>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <section className="container">
+          {contacts.length > 0 ? (
+            contacts.map((c) => <Contact key={c.id} contact={c} />)
+          ) : (
+            <img
+              src={notFoundGif}
+              alt="not found any contact"
+              className="w-25 align-center"
+            />
+          )}
+        </section>
+      )}
     </>
   );
 };

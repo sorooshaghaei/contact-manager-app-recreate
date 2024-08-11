@@ -6,10 +6,12 @@ import Navbar from "./components/Navbar";
 const App = () => {
   // eslint-disable-next-line
   const [getContact, setContact] = useState([]);
+  // eslint-disable-next-line
+  const [loading, setLoading] = useState(false); //for spinner
   return (
     <>
       <Navbar />
-      <Contacts contacts={getContact} />
+      <Contacts contacts={getContact} loading={loading} />
     </>
   );
 };
