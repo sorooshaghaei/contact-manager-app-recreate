@@ -1,5 +1,5 @@
 import React from "react";
-import { DarkBlue, LightBlue, Orange } from "../../helpers/colors";
+import { DarkBlue, LightBlue, Orange } from "../../helpers/colors"
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
               alt="contact pic"
             />
           </div>
-          <div className="col-12 col-sm-8 col-md-8 d-flex ">
+          <div class="col-12 col-sm-8 col-md-8 d-flex ">
             <div className="card-body">
               <ul className="list-group">
                 <li

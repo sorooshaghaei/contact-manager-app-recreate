@@ -1,12 +1,10 @@
-import React, { useState } from "react";
 import { SkyBlue } from "../../helpers/colors";
 import Contact from "./Contact";
 
 import notFoundGif from "../../assets/no-found.gif";
 
-const Contacts = () => {
-  // eslint-disable-next-line
-  const [getContact, setContact] = useState([]);
+const Contacts = ({ contacts }) => {
+  
   return (
     <>
       <section className="container">
@@ -16,10 +14,8 @@ const Contacts = () => {
       </section>
 
       <section className="container">
-        {getContact > 0 ? (
-          (c) => {
-            c.map(<Contact />);
-          }
+        {contacts.length > 0 ? (
+          contacts.map((c) => <Contact key={c.id} contact={c} />)
         ) : (
           <img
             src={notFoundGif}
