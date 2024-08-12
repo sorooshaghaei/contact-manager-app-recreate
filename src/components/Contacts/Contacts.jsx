@@ -1,8 +1,7 @@
 import { SkyBlue } from "../../helpers/colors";
-import Contact from "./Contact";
+import { Contact, Spinner } from "../../components";
 
 import notFoundGif from "../../assets/no-found.gif";
-import Spinner from "../Spinner";
 
 const Contacts = ({ contacts, loading }) => {
   return (

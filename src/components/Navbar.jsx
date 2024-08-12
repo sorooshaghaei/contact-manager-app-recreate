@@ -1,5 +1,5 @@
 import React from "react";
-import SearchContact from "./contact/SearchContact";
+import { SearchContact } from "../components";
 import { DarkBlue, Orange } from "../helpers/colors";
 
 const Navbar = () => {
@@ -19,7 +19,9 @@ const Navbar = () => {
                 className="m-3 fa fa-address-book"
                 style={{ color: Orange }}
               ></i>
-              <span style={{ color: Orange }}><b>contact manager</b></span>
+              <span style={{ color: Orange }}>
+                <b>contact manager</b>
+              </span>
             </div>
 
             <div className="col">

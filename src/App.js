@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Contacts from "./components/contact/Contacts";
-import Navbar from "./components/Navbar";
+import {Contacts, Navbar} from "./components";
 
 const App = () => {
   // eslint-disable-next-line
