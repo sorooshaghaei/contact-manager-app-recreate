@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+
 import {
   Contacts,
   Navbar,
-  EditContact,
-  AddContact,
-  ViewContact,
-  Contact,
+  // EditContact,
+  // AddContact,
+  // ViewContact,
+  // Contact,
 } from "./components";
 
 const App = () => {
