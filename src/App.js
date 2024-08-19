@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+import { Route, Routes } from "react-router-dom";
+
 import {
   Contacts,
   Navbar,
@@ -17,8 +19,15 @@ const App = () => {
   const [loading, setLoading] = useState(false); //for spinner
   return (
     <>
-      <Navbar />
-      <Contacts contacts={getContact} loading={loading} />
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={<Contacts contacts={getContact} loading={loading} />}
+          />
+        </Routes>
+      </div>
     </>
   );
 };
