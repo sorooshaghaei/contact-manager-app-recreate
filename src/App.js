@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 import { Route, Routes, Navigate } from "react-router-dom";
@@ -16,6 +16,13 @@ const App = () => {
   const [getContact, setContact] = useState([]);
   // eslint-disable-next-line
   const [loading, setLoading] = useState(false); //for spinner
+
+
+  useEffect = () => {
+
+  }
+
+
   return (
     <>
       <div className="App">
