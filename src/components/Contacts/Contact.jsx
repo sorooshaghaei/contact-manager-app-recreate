@@ -1,10 +1,10 @@
 import React from "react";
 import { DarkBlue, LightBlue, Orange } from "../../helpers/colors"
 
-const Contact = () => {
+const Contact = ({contact}) => {
   return (
     <>
-      <div className="card col-12 col-md-6 " style={{ background: DarkBlue }}>
+      <div className="card col-12 col-md-6 mx-1" style={{ background: DarkBlue }}>
         <div className="row g-0 p-3">
           <div className="d-flex col-12 col-sm-4 col-md-4 justify-content-center justify-content-sm-start">
             <img
@@ -19,32 +19,33 @@ const Contact = () => {
                 <li
                   className="list-group-item"
                   style={{ background: LightBlue }}
+                  
                 >
-                  Name:
+                  Name:{contact.fullName}
                 </li>
                 <li
                   className="list-group-item"
                   style={{ background: LightBlue }}
                 >
-                  Email:
+                  Email:{contact.email}
                 </li>
                 <li
                   className="list-group-item"
                   style={{ background: LightBlue }}
                 >
-                  Phone Number:
+                  Phone Number:{contact.phone_Number}
                 </li>
                 <li
                   className="list-group-item"
                   style={{ background: LightBlue }}
                 >
-                  Address:
+                  Address:{contact.address}
                 </li>
                 <li
                   className="list-group-item"
                   style={{ background: LightBlue }}
                 >
-                  Relationship:
+                  Relationship:{contact.groups}
                 </li>
               </ul>
             </div>

@@ -1,20 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { AddContact, Contacts, EditContact, ViewContact } from "../components";
 
-const Router = () => {
-  // eslint-disable-next-line
-  const [getContacts, setContacts] = useState([]);
-  // eslint-disable-next-line
-  const [loading, setLoading] = useState(false); //for spinner
-
+const Router = ({ contacts, loading, groups }) => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Navigate to="/contacts" />} />
         <Route
           path="/contacts"
-          element={<Contacts contacts={getContacts} loading={loading} />}
+          element={<Contacts contacts={contacts} loading={loading} groups={groups} />}
         />
         <Route path="/contacts/add" element={<AddContact />} />
         <Route path="/contacts/:contactId" element={<ViewContact />} />
