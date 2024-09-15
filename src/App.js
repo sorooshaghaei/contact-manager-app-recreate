@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import "./App.css";
-
 import { Router, Navbar } from "./components";
 
 const App = () => {
-  useEffect = () => {
+  useEffect(() => {
     
-  };
+  }, []);
 
   return (
     <>
