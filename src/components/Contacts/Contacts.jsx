@@ -1,6 +1,6 @@
+import React from 'react';
 import { SkyBlue } from "../../helpers/colors";
 import { Contact, Spinner } from "../../components";
-
 import notFoundGif from "../../assets/no-found.gif";
 
 const Contacts = ({ contacts, loading }) => {
@@ -9,9 +9,17 @@ const Contacts = ({ contacts, loading }) => {
       {loading ? (
         <Spinner />
       ) : (
-        <section className="container d-flex justify-content-center align-items-center mt-5">
+        <section className="mt-5">
           {contacts.length > 0 ? (
-            contacts.map((c) => <Contact key={c.id} contact={c} />)
+            <div className="container">
+              <div className="row">
+                {contacts.map((c) => (
+                  <div className="col-12 col-md-6 col-lg-6 mb-4" key={c.id}>
+                    <Contact contact={c} />
+                  </div>
+                ))}
+              </div>
+            </div>
           ) : (
             <img
               src={notFoundGif}
@@ -22,7 +30,7 @@ const Contacts = ({ contacts, loading }) => {
         </section>
       )}
 
-      <section className="container d-flex justify-content-center align-items-center mt-5">
+      <section className="d-flex justify-content-center align-items-center mt-5">
         <button className="btn mt-3 mb-3" style={{ background: SkyBlue }}>
           Create New Contact <i className="fa fa-plus-circle mx-2"></i>
         </button>
