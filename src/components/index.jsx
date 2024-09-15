@@ -6,3 +6,5 @@ export { default as Contacts } from "./Contacts/Contacts";
 export { default as SearchContact } from "./Contacts/SearchContact";
 export { default as Navbar } from "./Navbar";
 export { default as Spinner } from "./Spinner";
+
+export { default as Router } from "../services/Router";
