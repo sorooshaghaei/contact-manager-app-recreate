@@ -2,6 +2,7 @@
 import React from "react";
 import { Contact, Spinner } from "../../components";
 import notFoundGif from "../../assets/no-found.gif";
+import { SkyBlue } from "../../helpers/colors";
 
 const Contacts = ({ contacts, loading, groups }) => {
   return (
@@ -31,7 +32,7 @@ const Contacts = ({ contacts, loading, groups }) => {
       )}
 
       <section className="d-flex justify-content-center align-items-center mt-5">
-        <button className="btn mt-3 mb-3">
+        <button className="btn mt-3 mb-3" style={{ background: SkyBlue }}>
           Create New Contact <i className="fa fa-plus-circle mx-2"></i>
         </button>
       </section>
