@@ -1,10 +1,14 @@
+// Contact.js
 import React from "react";
 import { DarkBlue, LightBlue, Orange } from "../../helpers/colors";
 
-const Contact = ({ contact }) => {
+const Contact = ({ contact, groups }) => {
+  // Find the group name based on the group ID
+  const groupName = groups.find(group => group.id === parseInt(contact.groups))?.name || "Unknown";
+
   return (
     <div
-      className="card d-flex flex-column flex-md-row align-items-center "
+      className="card d-flex flex-column flex-md-row align-items-center"
       style={{ background: DarkBlue }}
     >
       <div className="col-3 d-flex justify-content-center align-items-center">
@@ -32,7 +36,7 @@ const Contact = ({ contact }) => {
             <strong>Address:</strong> {contact.address}
           </li>
           <li className="list-group-item" style={{ background: LightBlue }}>
-            <strong>Relationship:</strong> {contact.groups}
+            <strong>Relationship:</strong> {groupName}
           </li>
         </ul>
       </div>

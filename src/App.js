@@ -1,3 +1,4 @@
+// App.js
 import { useEffect, useState } from "react";
 import "./App.css";
 import { Router, Navbar } from "./components";
@@ -6,7 +7,6 @@ import axios from "axios";
 const App = () => {
   const [getContacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(false); // for spinner
-  // eslint-disable-next-line no-unused-vars
   const [getGroups, setGroups] = useState([]);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Router contacts={getContacts} loading={loading} />
+      <Router contacts={getContacts} loading={loading} groups={getGroups} />
     </div>
   );
 };

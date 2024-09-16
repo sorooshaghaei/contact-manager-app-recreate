@@ -1,9 +1,9 @@
-import React from 'react';
-import { SkyBlue } from "../../helpers/colors";
+// Contacts.js
+import React from "react";
 import { Contact, Spinner } from "../../components";
 import notFoundGif from "../../assets/no-found.gif";
 
-const Contacts = ({ contacts, loading }) => {
+const Contacts = ({ contacts, loading, groups }) => {
   return (
     <>
       {loading ? (
@@ -15,7 +15,7 @@ const Contacts = ({ contacts, loading }) => {
               <div className="row">
                 {contacts.map((c) => (
                   <div className="col-12 col-md-6 col-lg-6 mb-4" key={c.id}>
-                    <Contact contact={c} />
+                    <Contact contact={c} groups={groups} />
                   </div>
                 ))}
               </div>
@@ -31,7 +31,7 @@ const Contacts = ({ contacts, loading }) => {
       )}
 
       <section className="d-flex justify-content-center align-items-center mt-5">
-        <button className="btn mt-3 mb-3" style={{ background: SkyBlue }}>
+        <button className="btn mt-3 mb-3">
           Create New Contact <i className="fa fa-plus-circle mx-2"></i>
         </button>
       </section>
