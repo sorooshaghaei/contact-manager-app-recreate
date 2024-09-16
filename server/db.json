@@ -1,18 +1,18 @@
 {
   "contacts": [
     {
-      "fullName": "soroosh aghaei",
-      "email": "soroosh77aghaei@gmail.com",
+      "fullName": "soroosh ",
+      "email": "soroosh@gmail.com",
       "phone_Number": "0022356478",
-      "address": "antony",
+      "address": "somewhere",
       "groups": "1",
       "id": 1
     },
     {
-      "fullName": "sadaf aghaei",
-      "email": "sadaf.aghaie@gmail.com",
+      "fullName": "sadaf ",
+      "email": "sadaf@gmail.com",
       "phone_Number": "888333212",
-      "address": "antony",
+      "address": "somewhere",
       "groups": "3",
       "id": 2
     }
