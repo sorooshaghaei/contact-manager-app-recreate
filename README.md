@@ -53,7 +53,7 @@ npm start
 
 
 ## Project Structure
-
+```
 Contact-Manager-App/
 ├── public/                 # Public assets like index.html
 ├── src/                    # Source code for the application
@@ -65,7 +65,7 @@ Contact-Manager-App/
 ├── server/                 # Backend files and server setup
 ├── package.json            # Project metadata and dependencies
 └── README.md               # Project documentation
-
+```
 
 ## Technologies Used
 
