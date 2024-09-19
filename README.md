@@ -50,20 +50,22 @@ npm install
 npm start
 ```
 
+
+
 ## Project Structure
 
-├── public
-├── src
-│   ├── components
-│   ├── pages
-│   ├── routes
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-├── server
-│   ├── (backend files)
-├── package.json
-└── README.md
+Contact-Manager-App/
+├── public/                 # Public assets like index.html
+├── src/                    # Source code for the application
+│   ├── components/         # Reusable React components
+│   ├── pages/              # Page components
+│   ├── routes/             # Routing components
+│   ├── App.js              # Main application component
+│   └── index.js            # Entry point for the React app
+├── server/                 # Backend files and server setup
+├── package.json            # Project metadata and dependencies
+└── README.md               # Project documentation
+
 
 ## Technologies Used
 
